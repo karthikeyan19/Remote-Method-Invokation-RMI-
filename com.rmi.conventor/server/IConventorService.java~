@@ -1,0 +1,10 @@
+import java.io.IOException;
+import java.rmi.RemoteException;
+import java.rmi.Remote;
+
+public interface IConventorService extends Remote
+{
+   double  currencyConvertor(String from,String to,double amount) throws RemoteException,IOException;
+   double  celicusToFahrenheit(double celicus)throws RemoteException;
+   double  degreeToRadian(double degree)throws RemoteException;
+ }
